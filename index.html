@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (pointer: fine) and (hover: hover)" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="source/encrypt.js"></script>
+    <script src="source/decrypt.js"></script>
+    <script src="source/clipboard.js"></script>
+    <title>Gelbify</title>
+</head>
+<body>
+    <div id="page">
+        <h1>Gelbify</h1>
+        <div id="encode" class="column">
+            <h2>Enkriptáló</h2>
+            <textarea id="e-area" placeholder="árvíztűrő tükörfúrógép..."></textarea><br>
+            <a href="#output"><button id="e-button" onclick="encrypt();">Encrypt</button></a>
+        </div>
+
+        <div id="decode" class="column">
+            <h2>Dekriptáló</h2>
+            <textarea id="d-area" placeholder="mazi fodi miski..."></textarea><br>
+            <a href="#output"><button id="d-button" onclick="decrypt();">Decrypt</button></a>
+        </div>
+
+        <div id="sep"></div>
+        <h2>Output:</h2>
+        <img src="source/icon_copy.png" id="copy" onclick="copy();" alt="szöveg másolása" title="szöveg másolása">
+        <div id="output">
+
+        </div>
+    </div>
+</body>
+</html>

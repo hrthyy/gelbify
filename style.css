@@ -1,0 +1,108 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: forestgreen;
+}
+
+.column {
+    width: 40%;
+    padding: 10px;
+    background-color:green;
+}
+.column, #output {
+    box-shadow: 10px 10px 0 chartreuse, 20px 20px 0 tomato, 30px 30px 0 aquamarine, -2px -2px 0 floralwhite;
+}
+
+#encode, #decode {
+    text-align: center;
+}
+
+#encode {
+    float: left;
+    margin-left: 6%;
+}
+#decode {
+    float: right;
+    margin-right: 6%;
+}
+
+#page h1, #page div+h2 {
+    text-align: center;
+    color: chartreuse;
+    font-weight: bold;
+    font-size: 250%;
+}
+#page h1 {
+    text-shadow: 4px 2px 0 tomato, 4px 4px 0 aquamarine;
+}
+
+textarea {
+    resize: none;
+    width: 80%;
+    height: 400px;
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sep {
+    clear: both;
+    height: 40%;
+}
+
+#output {
+    width: 80%;
+    background-color: white;
+    color: black;
+    clear: both;
+    padding: 5%;
+    margin: 5% auto 5% auto;
+}
+
+#page h2 {
+    margin: 5%;
+}
+
+#copy {
+    border: 2px solid green;
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    cursor: pointer;
+    float: right;
+    border-radius: 25%;
+}
+#copy:hover {
+    background-color: aquamarine;
+}
+#copy:active {
+    background-color: lime;
+}
+
+.column button {
+    padding: 10px;
+    width: 30%;
+    font-weight: bold;
+    color: green;
+    font-size: 120%;
+    background-color: chartreuse;
+    border: none;
+    box-shadow: 4px 2px 0 tomato, 4px 4px 0 aquamarine;
+}
+.column button:hover {
+    background-color: white;
+    color: green;
+    font-size: 130%;
+}
+.column button:active {
+    font-size: 115%;
+    color: tomato;
+    background-color: aquamarine;
+}
+
+
+.column h2 {
+    font-size: 150%;
+    color: white;
+}
